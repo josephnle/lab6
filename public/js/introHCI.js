@@ -48,7 +48,7 @@ function addProject(result) {
 function randomizeColors(e) {
   e.preventDefault();
 
-  $.get('/palette', applyColors);
+  $.get('http://www.colourlovers.com/api/colors/random?format=json', applyColors);
 }
 
 function applyColors(result) {
